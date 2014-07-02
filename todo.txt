@@ -1,0 +1,24 @@
+1. Write front-end validation code.
+  - Check for valid url
+  - Check for XSS and remove if found
+  - Append http:// or http://www. if needed
+
+2. Add better front-end code
+  - HTML form
+  - Input validation
+  - Data display
+
+3. Add structure and style
+  - Add skeleton
+  - Re-design HTML
+  - Create visual design
+  - Select colour palette
+  - Create logo
+
+4. Add to Git
+
+5. Create production branch
+  - Change urls
+  - Add analytics
+  
+6. Deploy to production
