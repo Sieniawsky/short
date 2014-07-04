@@ -14,11 +14,9 @@
   - Create visual design
   - Select colour palette
   - Create logo
-
-4. Add to Git
-
+  
 5. Create production branch
   - Change urls
   - Add analytics
-  
+
 6. Deploy to production
