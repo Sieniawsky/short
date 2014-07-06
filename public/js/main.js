@@ -3,14 +3,23 @@
 // return data is then presented to the user.
 
 $( function() {
+
+  var valid = new Standard();
+
   $( "#url" ).on( "keyup", function( e ) {
     if( e.keyCode === 13 ) {
       var url = $( this ).val();
-      var parameters = { url: url };
+      url = valid.prefix( url );
 
-      $.post( "/add", parameters, function( data ) {
-        $( "#result" ).text( "Shortened URL: " + data );
-      });
+      if ( valid.isValid( url ) ) {
+        var parameters = { url: url };
+
+        $.post( "/add", parameters, function( data ) {
+          $( "#result" ).text( "Shortened URL: " + data );
+        });
+      } else {
+        $( "#result" ).text( "Invalid URL" );
+      }
     }
   });
 });
