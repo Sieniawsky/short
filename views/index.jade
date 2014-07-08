@@ -1,8 +1,16 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  input#url(type="text", placeholder="Enter a URL")
-  button(type="submit") minify
-  p#result
+  div(class="container center-x")
+    div(class="row")
+      div(class="ten columns offset-by-three")
+        a(href="/")
+          img(src="/images/logo.png", class="logo")
+        #bucket
+          p(class="description") A simple URL shortener.
+          input#url(type="text", placeholder="Enter a URL ...", class="form-control")
+          a(href="#", class="btn") Shorten
+          p#result
+      footer(class="footer")
+        p(class="footer-text center-x") Made with care by 
+          a(href="http://www.github.com/Sieniawsky", class="footer-text") @Sieniawsky

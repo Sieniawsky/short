@@ -1,5 +1,5 @@
 // Basic front-end code. Hooks the enter key press 
-// and makes a POST request to add the nex URL. The 
+// and makes a POST request to add the new URL. The 
 // return data is then presented to the user.
 
 $( function() {
