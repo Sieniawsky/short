@@ -11,6 +11,8 @@ body {
    height:100%;
 }
 
+/* Use best Helvetica available */
+
 body {
    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
                  Helvetica, Arial, "Lucida Grande", sans-serif; 
@@ -30,7 +32,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top: 40px;
   padding-right: 10px;
 }
 
@@ -39,8 +41,9 @@ body {
   display: block;
 }
 
-/* #bdc3c7 */
-/* #0099cb */
+/* Form-control and btn css taken from the 
+   Flat-UI User Interface Kit made by Designmodo. */
+
 .form-control {
   box-sizing: border-box;
   border: 2px solid #242178;

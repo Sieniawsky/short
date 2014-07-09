@@ -4,22 +4,22 @@
   + Append http:// or http://www. if needed
 
 2. Add better front-end code
-  - HTML form
-  - Input validation
-  - User experience improvement
-  - Data display
+  + HTML form
+  + Input validation
+  + User experience improvement
+  + Data display
   - Rename everything to something that makes sense
 
 3. Add structure and style
-  - Add skeleton
-  - Re-design HTML
-  - Create visual design
-  - Select colour palette
-  - Create logo
-  - Consolidate CSS
-  - Add CSS comments
-  - Translate to Jade
-  - Hook up to app
+  + Add skeleton
+  + Re-design HTML
+  + Create visual design
+  + Select colour palette
+  + Create logo
+  + Consolidate CSS
+  + Add CSS comments
+  + Translate to Jade
+  + Hook up to app
 
 4. Create production branch
   - Change urls
