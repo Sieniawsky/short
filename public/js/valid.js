@@ -1,6 +1,6 @@
-var Standard = (function() {
+var ValidURL = (function() {
 
-  var Standard = function() {
+  var Validator = function() {
     this.regex = new RegExp(
                   "^" +
                     // protocol identifier
@@ -37,7 +37,7 @@ var Standard = (function() {
                 );
   };
 
-  Standard.prototype.prefix = function( url ) {
+  Validator.prototype.add_prefix = function( url ) {
 
     var array = url.split(".");
 
@@ -55,10 +55,10 @@ var Standard = (function() {
 
   };
 
-  Standard.prototype.isValid = function( url ) {
+  Validator.prototype.is_valid = function( url ) {
     return this.regex.test( url );
   };
 
-  return Standard;
+  return Validator;
 
 })();

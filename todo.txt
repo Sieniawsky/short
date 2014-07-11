@@ -10,9 +10,9 @@ Version 0.1.*
     - Ensure that build passes all tests
 
     - Create and add favicon
-    - Change page title
-    - Commit to master
-    - Delete prob branch
+    + Change page title
+    + Commit to master
+    + Delete prob branch
     - Create new production branch with semantic versioning
 
   Production
@@ -24,4 +24,4 @@ Version 1.0.0
 
   Development
 
-      - Check for XSS and remove if found
+    - Check for XSS and remove if found
