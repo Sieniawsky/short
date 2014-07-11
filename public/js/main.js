@@ -5,7 +5,7 @@
 $( function() {
 
   // Initialize the URL validator
-  var valid = new Standard();
+  var valid = new ValidURL();
 
   // Add event listeners for when the enter key is pressed while focus is on the 
   // URL input field, and for when the shorten button is clicked.
@@ -28,9 +28,9 @@ $( function() {
   // URL is return and then displayed to the user.
   var add_url = function( url ) {
 
-    var normalized_url = valid.prefix( url );
+    var normalized_url = valid.add_prefix( url );
 
-    if ( valid.isValid( normalized_url ) ) {
+    if ( valid.is_valid( normalized_url ) ) {
       var parameters = { url: normalized_url };
 
       $.post( "/add", parameters, function( data ) {
