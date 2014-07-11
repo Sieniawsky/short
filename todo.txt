@@ -2,8 +2,9 @@ Version 0.1.*
 
   Development
 
-    - Add margin-top to lower logo and input to center
+    + Add margin-top to lower logo and input to center
     - Add proper error messages on validation failure
+    - Add javascript void on button click
     - Add analytics
     - Add tests for back-end and front-end
     - Test
@@ -25,3 +26,7 @@ Version 1.0.0
   Development
 
     - Check for XSS and remove if found
+    - Add Configuration file
+    - Add flags for production and developement so that one 
+      version can be used for deployments and development
+    - Add JSHint to npm start script

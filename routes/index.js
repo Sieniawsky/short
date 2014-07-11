@@ -40,9 +40,7 @@ exports.redirect = function( req, res ) {
 // url which is then returned as part of the response for use on the 
 // front-end.
 exports.add = function( req, res ) {
-
-  console.log( "Add on server-side" );
-
+  
   var url       = req.body.url;
   var encoded   = "";
   var short_url = "";
