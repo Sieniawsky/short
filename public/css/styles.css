@@ -4,28 +4,25 @@
 
 /* General */
 
-html,
-body {
-   margin:0;
-   padding:0;
-   height:100%;
+html {
+  position: relative;
+  min-height: 100%;
 }
 
-/* Use best Helvetica available */
-
 body {
+  /* Use best Helvetica available */
    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
                  Helvetica, Arial, "Lucida Grande", sans-serif; 
    font-weight: 300;
-}
 
-.container {
-   min-height:100%;
-   position:relative;
+   /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  background-color: #A6D7EF;
 }
 
 .description {
   font-size: 20px;
+  color: #206C91;
 }
 
 .logo {
@@ -34,6 +31,10 @@ body {
   margin-right: auto;
   margin-top: 40px;
   padding-right: 10px;
+  font-size: 250px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #39449D;
 }
 
 .center-x {
@@ -46,8 +47,9 @@ body {
 
 .form-control {
   box-sizing: border-box;
-  border: 2px solid #242178;
-  color: #000000;
+  border: 2px solid #39449D;
+  color: #206C91;
+  text-align: center;
   font-size: 15px;
   width: 100%;
   line-height: 1.4;
@@ -62,7 +64,7 @@ body {
 }
 
 .form-control:focus {
-  border-color: #cd0070;
+  border-color: #39449D;
   outline: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -78,25 +80,27 @@ body {
   border-radius: 4px;
   padding: 10px 15px;
   color: #ffffff;
-  background-color: #242178;
+  background-color: #39449D;
   -webkit-font-smoothing: subpixel-antialiased;
   -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
   transition: border .25s linear, color .25s linear, background-color .25s linear;
 }
+
+/* Hover, Focus, and Active CSS is redundant but left in for later use. */
 
 .btn:hover,
 .btn:focus {
   outline: none;
   color: #ffffff;
   color: #ffffff;
-  background-color: #cd0070;
-  border-color: #5dade2;
+  background-color: #39449D;
+  border-color: #39449D;
 }
 
 .btn:active,
 .btn.active {
-  background: #2c81ba;
-  border-color: #2c81ba;
+  background: #39449D;
+  border-color: #39449D;
   outline: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -113,7 +117,7 @@ body {
 
 .footer-text,
 a.footer-text {
-  color: #bdc3c7;
+  color: #206C91;
   font-size: 14px;
   text-decoration: none;
 }

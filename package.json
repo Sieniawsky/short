@@ -9,10 +9,10 @@
   },
   "dependencies": {
     "express": "~4.2.0",
-    "static-favicon": "~1.0.0",
     "jade": "~1.3.0",
     "morgan": "~1.0.0",
     "body-parser": "~1.0.0",
+    "serve-favicon": "~2.0.1",
     "mongodb": "~1.4.7",
     "monk": "~0.9.0"
   },
