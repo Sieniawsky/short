@@ -47,7 +47,7 @@ $( function() {
 
     var bucket = $( "#bucket" ).empty();
 
-    bucket.append( "<p class='description'>Here's your shortened URL, enjoy &#9825;</p>" );
+    bucket.append( "<p class='description'>Here's your shortened URL, enjoy <span class='heart'>&#9825;</span></p>" );
     bucket.append( "<input type='text' readonly='true' class='form-control' onclick='this.select()' value='" + url +"'>" );
 
   };
