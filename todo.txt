@@ -10,7 +10,7 @@ Version 0.1.*
     - Test
     - Ensure that build passes all tests
 
-    - Create and add favicon
+    + Create and add favicon
     + Change page title
     + Commit to master
     + Delete prob branch
@@ -18,8 +18,8 @@ Version 0.1.*
 
   Production
 
-    - Pull changes to heroku production
-    - Re-deploy heroku with changes
+    + Pull changes to heroku production
+    + Re-deploy heroku with changes
 
 Version 1.0.0
 
