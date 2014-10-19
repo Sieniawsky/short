@@ -1,3 +1,36 @@
+//
+// Regular Expression for URL validation
+//
+// Author: Diego Perini
+// Updated: 2010/12/05
+// License: MIT
+//
+// Copyright (c) 2010-2013 Diego Perini (http://www.iport.it)
+//
+// Permission is hereby granted, free of charge, to any person
+// obtaining a copy of this software and associated documentation
+// files (the "Software"), to deal in the Software without
+// restriction, including without limitation the rights to use,
+// copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the
+// Software is furnished to do so, subject to the following
+// conditions:
+//
+// The above copyright notice and this permission notice shall be
+// included in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+// EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+// OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+// NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+// HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+// WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+// OTHER DEALINGS IN THE SOFTWARE.
+
+// Basic URL normalizer and validator. Made using regex-weburl.js
+// created by Diego Perini.
+
 var ValidURL = (function() {
 
   var Validator = function() {
@@ -33,18 +66,20 @@ var ValidURL = (function() {
         "(?::\\d{2,5})?" +
         // resource path
         "(?:/[^\\s]*)?" +
+        // parameters
+        "(?:/?\\S*)?" +
       "$", "i"
     );
   };
 
-  Validator.prototype.add_prefix = function(url) {
+  Validator.prototype.normalize = function(url) {
 
     var array = url.split(".");
 
     if (array.length === 2) {
       array[0] = "http://www." + array[0];
 
-    } else if (array.length === 3) {
+    } else if (array.length >= 3) {
       if (array[0].substring(0, 7) !== "http://" && array[0].substring(0, 8) !== "https://") {
         array[0] = "http://" + array[0];
       }
@@ -54,7 +89,7 @@ var ValidURL = (function() {
     return array.join(".");
   };
 
-  Validator.prototype.is_valid = function(url) {
+  Validator.prototype.validate = function(url) {
     return this.regex.test(url);
   };
 
