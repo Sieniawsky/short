@@ -28,9 +28,9 @@ $(function() {
   // URL is return and then displayed to the user.
   var add_url = function(url) {
 
-    var normalized_url = valid.add_prefix(url);
+    var normalized_url = valid.normalize(url);
 
-    if (valid.is_valid(normalized_url)) {
+    if (valid.validate(normalized_url)) {
       var parameters = { url: normalized_url };
 
       $.post("/add", parameters, function(data) {

@@ -102,7 +102,6 @@ body {
 .btn:focus {
   outline: none;
   color: #ffffff;
-  color: #ffffff;
   background-color: #39449D;
   border-color: #39449D;
 }
