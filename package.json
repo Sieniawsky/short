@@ -1,20 +1,20 @@
 {
-  "name": "short",
-  "description": "A simple URL shortener",
-  "author": "Martin Sieniawski <m.sieniawski@live.ca>",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "start": "node app.js"
-  },
-  "dependencies": {
-    "express": "~4.2.0",
-    "jade": "~1.3.0",
-    "morgan": "~1.0.0",
-    "body-parser": "~1.0.0",
-    "serve-favicon": "~2.0.1",
-    "mongodb": "~1.4.7",
-    "monk": "~0.9.0"
-  },
-  "engine": "node 0.10.28"
+    "name": "short",
+    "description": "A simple URL shortener",
+    "author": "Martin Sieniawski <m.sieniawski@live.ca>",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "express": "~4.2.0",
+        "jade": "~1.3.0",
+        "morgan": "~1.0.0",
+        "body-parser": "~1.0.0",
+        "serve-favicon": "~2.0.1",
+        "mongodb": "~1.4.7",
+        "monk": "~0.9.0"
+    },
+    "engine": "node 0.10.28"
 }

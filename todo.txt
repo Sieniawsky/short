@@ -1,32 +1,32 @@
 Version 0.1.*
 
-  Development
+    Development
 
-    + Add margin-top to lower logo and input to center
-    - Add proper error messages on validation failure
-    - Add javascript void on button click
-    - Add analytics
-    - Add tests for back-end and front-end
-    - Test
-    - Ensure that build passes all tests
+        + Add margin-top to lower logo and input to center
+        - Add proper error messages on validation failure
+        - Add javascript void on button click
+        - Add analytics
+        - Add tests for back-end and front-end
+        - Test
+        - Ensure that build passes all tests
 
-    + Create and add favicon
-    + Change page title
-    + Commit to master
-    + Delete prob branch
-    - Create new production branch with semantic versioning
+        + Create and add favicon
+        + Change page title
+        + Commit to master
+        + Delete prob branch
+        - Create new production branch with semantic versioning
 
-  Production
+    Production
 
-    + Pull changes to heroku production
-    + Re-deploy heroku with changes
+        + Pull changes to heroku production
+        + Re-deploy heroku with changes
 
 Version 1.0.0
 
-  Development
+    Development
 
-    - Check for XSS and remove if found
-    - Add Configuration file
-    - Add flags for production and developement so that one 
-      version can be used for deployments and development
-    - Add JSHint to npm start script
+        - Check for XSS and remove if found
+        - Add Configuration file
+        - Add flags for production and developement so that one
+            version can be used for deployments and development
+        - Add JSHint to npm start script

@@ -5,132 +5,130 @@
 /* General */
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  /* Use best Helvetica available */
-   font-family: "Raleway", sans-serif;
-   font-weight: 300;
+    /* Use best Helvetica available */
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
 
-   /* Margin bottom by footer height */
-  margin-bottom: 60px;
-  background-color: #A6D7EF;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-color: #A6D7EF;
 }
 
 .description {
-  font-size: 20px;
-  color: #206C91;
+    font-size: 20px;
+    color: #206C91;
 }
 
 .logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
-  padding-right: 10px;
-  font-size: 250px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #39449D;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding-right: 10px;
+    font-size: 250px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #39449D;
 }
 
 @media only screen and (max-width: 767px) {
-  .logo {
-    margin-top: 5px;
-    font-size: 150px;
-  }
+    .logo {
+        margin-top: 5px;
+        font-size: 150px;
+    }
 }
 
 .heart {
-  font-family: sans-serif;
+    font-family: sans-serif;
 }
 
 .center-x {
-  text-align: center;
-  display: block;
+    text-align: center;
+    display: block;
 }
 
-/* Form-control and btn css taken from the 
-   Flat-UI User Interface Kit made by Designmodo. */
-
+/* Form-control and btn css taken from the
+Flat-UI User Interface Kit made by Designmodo. */
 .form-control {
-  box-sizing: border-box;
-  border: 2px solid #39449D;
-  color: #206C91;
-  text-align: center;
-  font-size: 15px;
-  width: 100%;
-  line-height: 1.4;
-  padding: 8px 12px;
-  margin-bottom: 10px;
-  -webkit-appearance: none;
-  border-radius: 6px;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
-  transition: border .25s linear, color .25s linear, background-color .25s linear;
+    box-sizing: border-box;
+    border: 2px solid #39449D;
+    color: #206C91;
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    line-height: 1.4;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    -webkit-appearance: none;
+    border-radius: 6px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+    transition: border .25s linear, color .25s linear, background-color .25s linear;
 }
 
 .form-control:focus {
-  border-color: #39449D;
-  outline: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+    border-color: #39449D;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .btn {
-  border: none;
-  display: block;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: normal;
-  line-height: 1.4;
-  border-radius: 4px;
-  padding: 10px 15px;
-  color: #ffffff;
-  background-color: #39449D;
-  -webkit-font-smoothing: subpixel-antialiased;
-  -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
-  transition: border .25s linear, color .25s linear, background-color .25s linear;
+    border: none;
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.4;
+    border-radius: 4px;
+    padding: 10px 15px;
+    color: #ffffff;
+    background-color: #39449D;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+    transition: border .25s linear, color .25s linear, background-color .25s linear;
 }
 
 /* Hover, Focus, and Active CSS is redundant but left in for later use. */
-
 .btn:hover,
 .btn:focus {
-  outline: none;
-  color: #ffffff;
-  background-color: #39449D;
-  border-color: #39449D;
+    outline: none;
+    color: #ffffff;
+    background-color: #39449D;
+    border-color: #39449D;
 }
 
 .btn:active,
 .btn.active {
-  background: #39449D;
-  border-color: #39449D;
-  outline: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+    background: #39449D;
+    border-color: #39449D;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 /* Footer */
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
 }
 
 .footer-text,
 a.footer-text {
-  color: #206C91;
-  font-size: 14px;
-  text-decoration: none;
+    color: #206C91;
+    font-size: 14px;
+    text-decoration: none;
 }
 
 a.footer-text:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
